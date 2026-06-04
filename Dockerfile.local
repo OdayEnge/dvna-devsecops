@@ -1,0 +1,9 @@
+FROM appsecco/dvna:sqlite
+
+WORKDIR /app
+
+COPY . .
+
+EXPOSE 9090
+
+CMD ["npm", "start"]
